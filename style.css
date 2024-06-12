@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+.container {
+    @apply max-w-7xl mx-auto px-4;
+}
+.btn {
+    @apply h-[40px] leading-[40px] bg-primary rounded-full text-white inline-block text-sm px-6 transition ease-in-out duration-300;
+}
+.btn:hover {
+    @apply bg-green-700 shadow-md;
+}
+.btn-lg {
+    @apply h-[64px] leading-[64px] px-28 text-lg;
+}
+.main-title {
+    @apply text-[32px]/[120%] lg:mb-5 lg:text-[64px]/[110%] -tracking-[1.5px] lg:-tracking-[4px] font-semibold;
+}
+
+@media (min-width: 768px) {
+    .lg\:btn-lg {
+        @apply h-[64px] leading-[64px] px-28 text-lg;
+    }
+}
+@media (min-width: 1024px) {
+    .lg\:btn-lg {
+        @apply h-[64px] leading-[64px] px-28 text-lg;
+    }
+}
+
+.out-of-stock {
+    background: rgba(26, 30, 38, 0.3);
+    backdrop-filter: blur(4px);
+}
+footer {
+    background: linear-gradient(180deg, #1a1e26 0%, #01100b 100%);
+}
